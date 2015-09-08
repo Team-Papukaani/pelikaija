@@ -8,5 +8,14 @@
     <h1>
         Hello Pelikaija!
     </h1>
+
+    <form form enctype="multipart/form-data" action="upload/" method="post"> {% csrf_token %}
+        <input type="file" id="file" name="file">
+        <input type="submit" value="Lähetä">
+    </form>
+
+    {{message}}
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.js"></script>
 </body>
 </html>
